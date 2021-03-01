@@ -1,5 +1,10 @@
 # Sample add-on: Google Gmail Salesforce
 
+![image](https://user-images.githubusercontent.com/10028441/109506717-a10bd880-7aa6-11eb-8b02-307f44d5c366.png)
+![image](https://user-images.githubusercontent.com/10028441/109506932-dca6a280-7aa6-11eb-863b-7152aa9cba45.png)
+![image](https://user-images.githubusercontent.com/10028441/109506991-ed571880-7aa6-11eb-92bc-090ad6abe0a4.png)
+![image](https://user-images.githubusercontent.com/10028441/109507110-0e1f6e00-7aa7-11eb-85f5-93f061da2c59.png)
+
 ## Before you begin
 
 1.  Initialize the project:

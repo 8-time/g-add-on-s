@@ -1,0 +1,44 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "OAuth2",
+        "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+        "version": "35"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/script.storage",
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "urlFetchWhitelist": ["https://*.salesforce.com/"],
+  "addOns": {
+    "common": {
+      "logoUrl": "https://login.salesforce.com/logos/Salesforce/AppLauncher/icon.png",
+      "name": "Google Gmail Salesforce",
+      "homepageTrigger": {
+        "runFunction": "handleHomePage"
+      },
+      "universalActions": [
+        {
+          "label": "Clear Session",
+          "runFunction": "handleClearSession"
+        }
+      ]
+    },
+    "gmail": {
+      "contextualTriggers": [
+        {
+          "unconditional": {},
+          "onTriggerFunction": "handleGmailContext"
+        }
+      ]
+    }
+  }
+}

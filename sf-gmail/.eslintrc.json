@@ -1,0 +1,12 @@
+{
+  "extends": ["google", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 5
+  },
+  "rules": {
+    "require-jsdoc": "off",
+    "no-var": "off",
+    "no-unused-vars": "off",
+    "max-len": ["error", { "code": 100, "ignoreUrls": true }]
+  }
+}

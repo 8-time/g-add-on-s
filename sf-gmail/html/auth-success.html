@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+    <?!= include('html/stylesheet'); ?>
+  </head>
+  <body>
+    <div class="sidebar">
+      <p>Your Salesforce account has been connected.</p>
+    </div>
+  </body>
+  <script>
+    setTimeout(function () {
+      top.window.close();
+    }, 2000);
+  </script>
+</html>
